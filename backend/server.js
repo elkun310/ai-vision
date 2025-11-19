@@ -15,6 +15,8 @@ app.use(express.json({ limit: '50mb' }));
 
 // Log ngay khi server script chạy
 console.log("🚀 Starting backend server...");
+console.log('🔑 GROQ_API_KEY:', process.env.GROQ_API_KEY ? 'SET' : 'NOT SET');
+
 
 // Health check endpoint
 app.get('/', (req, res) => {
