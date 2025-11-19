@@ -1,11 +1,8 @@
 // backend/server.js
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
-
-if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config();
-}
 
 const app = express();
 
